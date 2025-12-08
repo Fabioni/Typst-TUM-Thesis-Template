@@ -9,7 +9,7 @@ categories = ["thesis"]
 homepage = "https://github.com/Fabioni/Typst-TUM-Thesis-Template"
 keywords = ["TUM", "München", "Munich", "TU München", "TU Munich", "Technische Universität München", "Technical University of Munich", "Thesis", "Masterarbeit", "Bachelorarbeit", "Final Thesis", "Bachelor's  Thesis", "Master's  Thesis"]
 disciplines = []
-compiler = "0.11.0"
+compiler = "0.14.0"
 
 [template]
 path = "template"
