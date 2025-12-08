@@ -11,7 +11,7 @@
   upper(align(center, text(font: "New Computer Modern", 1.55em, weight: 600, "Technical University of Munich")))
 
   v(5mm)
-  smallcaps(align(center, text(font: "New Computer Modern", 1.38em, weight: 500, "School of Computation, Information and Technology \n Informatics")))
+  smallcaps(align(center, text(font: "New Computer Modern", 1.38em, weight: 500, "School of Computation, Information and Technology\n\nInformatics")))
   
   v(25mm)
 

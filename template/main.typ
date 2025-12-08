@@ -2,8 +2,9 @@
 
 #import "utils.typ": inwriting, draft, todo
 #import "glossary.typ": glossary
-#import "@preview/glossarium:0.2.6": make-glossary, print-glossary, gls, glspl
+#import "@preview/glossarium:0.5.9": make-glossary, register-glossary, print-glossary, gls, glspl
 #show: make-glossary
+#register-glossary(glossary)
 
 
 /** Introduction
@@ -75,8 +76,7 @@
 
 
 // Set spacing
-#set par(leading: 0.9em, first-line-indent: 1.8em, justify: true)
-#show par: set block(spacing: 1em)
+#set par(leading: 0.9em, first-line-indent: 1.8em, justify: true, spacing: 1em)
 #set table(inset: 6.5pt)
 #show table: set par(justify: false)
 #show figure: it => [#v(1em) #it #v(1em)]
