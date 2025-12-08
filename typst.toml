@@ -1,12 +1,12 @@
 [package]
-name = "tum-exzellenz-thesis"
+name = "exzellenz-tum-thesis"
 version = "0.1.0"
 entrypoint = "template.typ"
 authors = ["Fabian Scherer <https://www.linkedin.com/in/fabian-scherer-de/>"]
 license = "MIT-0"
 description = "Customizable template for a thesis at the TU Munich"
 categories = ["thesis"]
-homepage = "https://github.com/fabioni/typst-tum-exzellenz-thesis/"
+homepage = "https://github.com/fabioni/typst-exzellenz-tum-thesis/"
 keywords = ["TUM", "München", "Munich", "TU München", "TU Munich", "Technische Universität München", "Technical University of Munich", "Thesis", "Masterarbeit", "Bachelorarbeit", "Final Thesis", "Bachelor's  Thesis", "Master's  Thesis"]
 disciplines = []
 compiler = "0.11.0"

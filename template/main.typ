@@ -1,5 +1,4 @@
-#import "@preview/tum-exzellenz-thesis:0.1.0": tum-exzellenz-thesis
-//#import "@local/tum-exzellenz-thesis:0.1.0": tum-exzellenz-thesis // for development
+#import "@preview/exzellenz-tum-thesis:0.1.0": exzellenz-tum-thesis
 
 #import "utils.typ": inwriting, draft, todo
 #import "glossary.typ": glossary
@@ -29,21 +28,23 @@
 // Global Settings //
 #set text(lang: "en", size: 12pt)
 #set text(ligatures: false)
+#set text(font: "New Computer Modern Sans")
 
 
-#show: tum-exzellenz-thesis.with(
+#show: exzellenz-tum-thesis.with(
   degree: "Master",
   program: "Informatics",
+  school: "School of Computation, Information and Technology \n Informatics",
   supervisor: "Prof. Dr. Albert Einstein",
   advisors: ("Dr. Werner Braun", "Hans Günther M.Sc.",),
   author: "Max Mustermann",
   startDate: "15.01.1799",
-  titleEnglish: "This is the title of the thesis",
-  titleGerman: "Das ist der Titel der Arbeit",
-  abstract_en: [
+  titleEn: "This is the Title of the Thesis",
+  titleDe: "Das ist der Titel der Arbeit",
+  abstractEn: [
     #lorem(60)
   ],
-  abstract_de: [#todo[Hier kommt die deutsche Übersetzung des englischen Abstracts hin]],
+  abstractDe: [#todo[Hier kommt die deutsche Übersetzung des englischen Abstracts hin]],
   acknowledgements: [
     I would like to express my gratitude to Fabian
   ],
@@ -64,6 +65,7 @@
 // Set fonts
 #set text(font: "New Computer Modern")
 #show raw: set text(font: "New Computer Modern Mono")
+#show math.equation: set text(font: "New Computer Modern Math")
 
 
 // Set font size
@@ -138,11 +140,10 @@
 
 
 // Draft Settings //
-#if inwriting {
-  show cite: set text(fill: blue)
-  show footnote: set text(fill: purple)
-  set cite(style: "chicago-author-date")
-}
+#show cite: set text(fill: blue) if inwriting
+#show footnote: set text(fill: purple) if inwriting
+#set cite(style: "chicago-author-date") if inwriting
+
 
 
 
