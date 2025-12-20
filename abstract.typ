@@ -1,10 +1,8 @@
-#let abstract(body, lang: "en") = {
-
-  let überschriften = (en: "Abstract", de: "Zusammenfassung")
+#let abstract(body) = {
 
   set text(
     size: 12pt, 
-    lang: lang
+    lang: "en"
   )
   
   set par(leading: 1em)
@@ -12,7 +10,7 @@
   
   v(1fr)
 
-  align(center, text(1.2em, weight: 600, überschriften.at(lang)))
+  align(center, text(1.2em, weight: 600, "Abstract"))
   
   align(
     center, 
