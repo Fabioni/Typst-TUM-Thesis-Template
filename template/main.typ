@@ -81,10 +81,10 @@
 
 // Names for headings
 #set heading(supplement: it => {
-  if (it.has("level")) {
-    if it.level == 1 [Part]
-    else if it.level == 2 [Chapter]
-    else [Section]
+  if (it.has("depth")) {
+    if it.depth == 1 [Chapter]
+    else if it.depth == 2 [Section]
+    else [Subsection]
   } else {
     [ERROR, this should not happen]
   }

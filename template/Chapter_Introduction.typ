@@ -1,9 +1,10 @@
 #import "utils.typ": todo
 
 = Introduction <chapter_introduction>
-This is the first chapter of your thesis. Main chapters are marked with = and should be contained in their own .typ file for cleanliness.
-== Drafting, Citing and Abbreviating
-This is a subsection. Each = after the first denotes the level of the section (== subsection, === sub-subsection, etc.).
+This is the first chapter of your thesis. Chapters are marked with = and should be contained in their own .typ file for cleanliness.
+Chapters, sections, etc. Can be referenced like @chapter_introduction and @section_drafting
+== Drafting, Citing and Abbreviating <section_drafting>
+This is a section. Each = after the first denotes the level of the heading (== section, === subsection).
 
 If there are things you haven't gotten to yet, it's useful to mark them as a TODO like this: #todo[Find the motivation]. TODOs are enabled when inwriting is enabled and will disappear if you disable it in utils.typ
 
