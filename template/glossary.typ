@@ -2,19 +2,21 @@
 
 #let glossary = (
   (
-    key: "unamur",
-    short: "UNamur",
-    long: "Namur University",
+    key: "tum",
+    short: "TUM",
+    long: "Technical University Munich",
+    group: "Universities"
   ),
-  // Add a DESCRIPTION
   (
-    key: "oidc",
-    short: "OIDC",
-    long: "OpenID Connect",
-    description: [
-      OpenID is an open standard and decentralized authentication protocol promoted by the non-profit
-      #link("https://en.wikipedia.org/wiki/OpenID#OpenID_Foundation")[OpenID Foundation].
-    ],
+    key: "lmu",
+    short: "LMU",
+    long: "Ludwig-Maximilians-Universität München",
+    group: "Universities"
+  ),
+  (
+    key: "ieee",
+    short: "IEEE",
+    long: "Institute of Electrical and Electronics Engineers",
   ),
   // Add a PLURAL form
   (
@@ -31,13 +33,6 @@
     // "longplural" will be used when "long" should be pluralized
     longplural: "diagonal matrices",
     description: "Probably some math stuff idk",
-  ),
-  // Add a GROUP
-  (
-    key: "tum",
-    short: "TU Munich",
-    // The terms are displayed by groups in the glossary
-    group: "Universities",
   ),
   // Add a CUSTOM entry
   (
