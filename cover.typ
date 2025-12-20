@@ -7,13 +7,11 @@
   v(1cm)
   align(center, image("TUM_logo.svg", width: 26%))
 
-  v(5mm)
-  upper(align(center, text(font: "New Computer Modern", 1.55em, weight: 600, "Technical University of Munich")))
+  upper(align(center, text(font: "New Computer Modern", 1.75em, weight: 700, school)))
+  upper(align(center, text(font: "New Computer Modern", 1.45em, weight: 500, program)))
+  upper(align(center, text(font: "New Computer Modern", 1.45em, weight: 500, "Technische Universität München")))
 
-  v(5mm)
-  smallcaps(align(center, text(font: "New Computer Modern", 1.38em, weight: 500, "School of Computation, Information and Technology\n\nInformatics")))
-  
-  v(25mm)
+  v(15mm)
 
   align(center, text(1.3em, weight: 100, degree + "’s Thesis in " + program))
   
