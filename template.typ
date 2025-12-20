@@ -6,18 +6,16 @@
 
 
 #let exzellenz-tum-thesis(
-  degree: "The degree",
+  degree: "The Degree",
   program: "The Program",
   school: "The School",
-  supervisor: "Your Supervisor",
-  advisors: ("The first advisor", "The second advisor"),
+  examiner: "Your Supervisor",
+  supervisors: ("The first supervisor", "The second supervisor"),
   author: "The Author",
-  startDate: "The Startdate",
   titleEn: "English Title",
   titleDe: "German Title",
-  abstractEn: [English Abstract],
-  abstractDe: [German Abstract],
-  acknowledgements: [The acknowledgements],
+  abstractText: none,
+  acknowledgements: none,
   submissionDate: "(Handover Date)",
   showTitleInHeader: true,
   draft: true,
@@ -59,10 +57,9 @@
     degree: degree,
     program: program,
     school: school,
-    supervisor: supervisor,
-    advisors: advisors,
+    examiner: examiner,
+    supervisors: supervisors,
     author: author,
-    startDate: startDate,
     submissionDate: draft_string + submissionDate
   )
 
@@ -72,15 +69,11 @@
     author: author,
     submissionDate: submissionDate
   )
+  if acknowledgements != none {
+    acknowledgement(acknowledgements)
+  }
 
-  acknowledgement(acknowledgements)
-
-  abstract(lang: "en")[#abstractEn]
-
-  abstract(lang: "de")[#abstractDe]
-
-  counter(page).update(1)
-
+  abstract(abstractText)
 
   set page(
     header: {

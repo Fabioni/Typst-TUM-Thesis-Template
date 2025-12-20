@@ -6,10 +6,9 @@
   degree: "",
   program: "",
   school: "",
-  supervisor: "",
-  advisors: (),
+  examiner: "",
+  supervisors: (),
   author: "",
-  startDate: none,
   submissionDate: none,
 ) = {
   
@@ -29,9 +28,8 @@
       columns: 2,
       stroke: none,
       strong("Author: "), author,
-      strong("Supervisor: "), supervisor,
-      strong("Advisors: "), advisors.join(", \n"),
-      //strong("Start Date: "), startDate,
+      strong("Examiner: "), examiner,
+      strong(if supervisors.len() == 1 { "Supervisor: " } else { "Supervisors: " }), supervisors.join(", \n"),
       strong("Submission Date: "), submissionDate,
     )
   )
