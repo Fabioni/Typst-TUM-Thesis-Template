@@ -15,20 +15,18 @@ Typst will create a new directory with all the files needed to get you started.
 ## Configuration
 This template exports the `exzellenz-tum-thesis` function with the following named arguments:
 
-- `degree`: String
-- `program`: String
-- `school`: String
-- `supervisor`: String
-- `advisor`: Array of Strings
+- `degree`: String - e.g. Bachelor, Master
+- `program`: String - e.g. Informatics, Electrical Engineering
+- `school`: String - e.g. School of Computation, Information and Technology
+- `examiner`: String - Your TUM professor
+- `supervisors`: Array of Strings - The official advisors and supervisors
 - `author`: String
-- `startDate`: String
 - `titleEn`: String
 - `titleDe`: String
-- `abstractEn`: Content block
-- `abstractDe`: Content block
-- `acknowledgements`: Content block
+- `abstractText`: Content block
+- `acknowledgements`: Content block - optional, if you have thanks to give
 - `submissionDate`: String
-- `showTitleInHeader`: Boolean
-- `draft`: Boolean
+- `showTitleInHeader`: Boolean - Should author and title appear in the header of each content page?
+- `draft`: Boolean - Set to false when finalizing the thesis
 
 The template will initialize your package with a sample call to the `exzellenz-tum-thesis` function.
