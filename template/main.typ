@@ -3,8 +3,6 @@
 #import "utils.typ": inwriting, draft, todo
 #import "glossary.typ": glossary
 #import "@preview/glossarium:0.5.9": make-glossary, register-glossary, print-glossary, gls, glspl
-#show: make-glossary
-#register-glossary(glossary)
 
 
 /** Introduction
@@ -17,7 +15,7 @@
 
 /** Drafting
 
-  Set inwriting and draft inside utils.
+  Set inwriting and draft inside utils.typ.
   
   The "draft" variable is used to show DRAFT in the header and the title. This should be true until the final version is handed-in.
   
@@ -44,11 +42,13 @@
     #lorem(60)
   ],
   acknowledgements: [
-    These are the acknowledgements, remove this argument if you don't need them
+    These are the acknowledgements. Remove this argument if you don't need them.
+    
+    Alternatively, you can list people, institutions or other entities that contributed to the successful completion of this thesis.
   ],
   submissionDate: datetime.today().display("[day].[month].[year]"),
   showTitleInHeader: true,
-  draft: draft,
+  draft: draft, // Do not change this here, rather change it in utils.typ
 )
 
 // Settings for Body //
@@ -91,7 +91,7 @@
 })
 
 // Set citation style
-#set cite(style: "alphanumeric")
+#set cite(style: "ieee")
 
 // Table stroke
 #set table(stroke: 0.5pt + black)
@@ -121,6 +121,10 @@
 #show cite: set text(fill: blue) if inwriting
 #show footnote: set text(fill: purple) if inwriting
 #set cite(style: "chicago-author-date") if inwriting
+
+// Make and register Glossary //
+#show: make-glossary
+#register-glossary(glossary)
 
 // ------ Content ------
 
@@ -167,7 +171,7 @@
 #include("Chapter_Appendix.typ")
 
 // List of Acronyms.
-#heading(numbering: none)[List of Acronyms]
+#heading(numbering: none)[Glossary]
 #print-glossary(glossary)
 
 // List of figures.
