@@ -34,7 +34,7 @@
 #show: exzellenz-tum-thesis.with(
   degree: "Master",
   program: "Informatics",
-  school: "School of Computation, Information and Technology \n Informatics",
+  school: "School of Computation, Information and Technology",
   examiner: "Prof. Dr. Albert Einstein",
   supervisors: ("Claude Elwood Shannon", "Kurt Gödel",), // A list of your supervisors. If you have just one, keep it as ("Name",) The template will automatically make it singular
   author: "Max Mustermann",
