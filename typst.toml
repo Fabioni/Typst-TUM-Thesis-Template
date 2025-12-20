@@ -1,8 +1,8 @@
 [package]
 name = "exzellenz-tum-thesis"
-version = "0.1.0"
+version = "0.2.0"
 entrypoint = "template.typ"
-authors = ["Fabian Scherer <https://www.linkedin.com/in/fabian-scherer-de/>"]
+authors = ["Fabian Scherer <https://www.linkedin.com/in/fabian-scherer-de/>", "Sebastian Oßner <https://www.github.com/ossner>"]
 license = "MIT-0"
 description = "Customizable template for a thesis at the TU Munich"
 categories = ["thesis"]
