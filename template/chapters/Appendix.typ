@@ -1,4 +1,4 @@
-#import "utils.typ": todo
+#import "../utils.typ": todo
 
 #heading(numbering: none)[Appendix A: Supplementary Material]
 

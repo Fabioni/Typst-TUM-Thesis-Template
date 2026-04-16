@@ -5,16 +5,23 @@
     key: "tum",
     short: "TUM",
     long: "Technical University Munich",
+    group: "Universities"
   ),
   (
     key: "lmu",
     short: "LMU",
     long: "Ludwig-Maximilians-Universität München",
+    group: "Universities"
   ),
   (
     key: "ieee",
     short: "IEEE",
     long: "Institute of Electrical and Electronics Engineers",
+  ),
+  (
+    key: "acm",
+    short: "ACM",
+    long: "Association for Computing Machinery",
   ),
   // Add a PLURAL form
   (

@@ -1,4 +1,4 @@
-#import "utils.typ": todo
+#import "../utils.typ": todo
 
 = Introduction <chapter_introduction>
 This is the first chapter of your thesis. Chapters are marked with = and should be contained in their own .typ file for cleanliness.
@@ -8,7 +8,7 @@ This is a section. Each = after the first denotes the level of the heading (== s
 
 If there are things you haven't gotten to yet, it's useful to mark them as a TODO like this: #todo[Find the motivation]. TODOs are enabled when inwriting is enabled and will disappear if you disable it in utils.typ
 
-This is likely the first place you have to list your citations. You can cite a paper in your items.bib like this @turing2021computing. While you are in inwriting mode, this will show up as chicago style so you can see the author and date directly, when you disable inwriting (e.g. when handing in a draft to your supervisor), or manually override the style, it will show as #cite(<turing2021computing>, style: "ieee") (@ieee:short style). A list of available styles and how to use them can be found at the #link("https://typst.app/docs/reference/model/cite/#parameters-style")[Typst documentation]. It is best to double check with your advisor which style to use. If you need to use a different style, change it in the call to the cite function in main.typ.
+This is likely the first place you have to list your citations. You can cite a paper in your items.bib like this @turing2021computing. While you are in inwriting mode, this will show up as chicago style so you can see the author and date directly, when you disable inwriting (e.g. when handing in a draft to your supervisor), or manually override the style, it will show as #cite(<turing2021computing>, style: "association-for-computing-machinery") (@acm:short style). A list of available styles and how to use them can be found at the #link("https://typst.app/docs/reference/model/cite/#parameters-style")[Typst documentation]. It is best to double check with your advisor which style to use. If you need to use a different style, change it in the call to the cite function in main.typ.
 
 Another useful concept is the glossary (especially if your thesis is longer). A glossary contains a list of abbreviations, acronyms, etc. In standard fashion, an abbreviation needs to be established in its long version before it can be used. For example: this is a thesis written at the @tum and not @lmu and Typst automatically knows that these acronyms are now established and now I can use @tum and @lmu. However, if I wanted to have it written out in long form again, I can simply write @tum:long. The Glossarium package has a lot of features that might be useful and others that might be overkill, you can read about them on #link("https://typst.app/universe/package/glossarium/")[the package site].
 
@@ -61,12 +61,12 @@ Figures can be referenced easily with @figure_dummy and numbering is automatic b
         columns: 3,     // 3 auto-sized columns
         row-gutter: 2mm,    // space between rows
         column-gutter: 2mm,    // space between columns
-        [#image("figures/dummy_image.jpg", width: 90%)],
-        [#image("figures/dummy_image.jpg", width: 90%)],
-        [#image("figures/dummy_image.jpg", width: 70%)],
-        [#image("figures/dummy_image.jpg", width: 70%)],
-        [#image("figures/dummy_image.jpg", width: 70%)],
-        [#image("figures/dummy_image.jpg", width: 100%)],
+        [#image("../figures/dummy_image.jpg", width: 90%)],
+        [#image("../figures/dummy_image.jpg", width: 90%)],
+        [#image("../figures/dummy_image.jpg", width: 70%)],
+        [#image("../figures/dummy_image.jpg", width: 70%)],
+        [#image("../figures/dummy_image.jpg", width: 70%)],
+        [#image("../figures/dummy_image.jpg", width: 100%)],
     ),
   caption: [
     A grid figure made up of the same sample image with varying scales.

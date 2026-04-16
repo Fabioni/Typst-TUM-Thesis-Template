@@ -1,4 +1,4 @@
-#import "@preview/exzellenz-tum-thesis:0.2.0": exzellenz-tum-thesis
+#import "@local/exzellenz-tum-thesis:0.2.0": exzellenz-tum-thesis
 
 #import "utils.typ": inwriting, draft, todo
 #import "glossary.typ": glossary
@@ -146,19 +146,19 @@
 #set heading(numbering: "1.1")
 // --- Main Chapters ---
 
-#include "Chapter_Introduction.typ"
+#include "chapters/1_Introduction.typ"
 
-//#include "Chapter_Background.typ"
+//#include "chapters/2_Background.typ"
 
-//#include "Chapter_RelatedWork.typ"
+//#include "chapters/3_RelatedWork.typ"
 
-//#include "Chapter_Methodology.typ"
+//#include "chapters/4_Methodology.typ"
 
-//#include "Chapter_Experiments.typ"
+//#include "chapters/5_Results.typ"
 
-//#include "Chapter_Discussion.typ"
+//#include "chapters/6_Discussion.typ"
 
-//#include "Chapter_FutureResearch.typ"
+//#include "chapters/7_Conclusion.typ"
 
 
 // --- Appendices ---
@@ -168,7 +168,7 @@
 #counter(page).update(1)
 
 
-#include("Chapter_Appendix.typ")
+#include("chapters/Appendix.typ")
 
 // List of Acronyms.
 #heading(numbering: none)[Glossary]
