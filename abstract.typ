@@ -13,7 +13,7 @@
   align(center, text(1.2em, weight: 600, "Abstract"))
   
   align(
-    center, 
+    left, 
     text[
       #body
     ]
