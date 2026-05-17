@@ -61,6 +61,7 @@
 #show heading.where(level: 3): set text(size: 1.05em)
 #show heading.where(level: 4): set text(size: 1.0em)
 #show figure: set text(size: 0.9em)
+#show figure.caption: set align(left)
 
 // Set spacing
 #set par(leading: 0.9em, first-line-indent: 1.8em, justify: true, spacing: 1em)
@@ -90,20 +91,11 @@
   }
 })
 
-// Set citation style
-#set cite(style: "ieee")
+// Set citation style - Change this if your advisor/field requires a different format
+#set cite(style: "association-for-computing-machinery")
 
 // Table stroke
 #set table(stroke: 0.5pt + black)
-
-// show reference targets in brackets
-#show ref: it => {
-  let el = it.element
-  if el != none and el.func() == heading {
-
-    [#it (#el.body)]
-  } else [#it]
-}
 
 // color links and references
 #show ref: set text(fill: color.olive)
